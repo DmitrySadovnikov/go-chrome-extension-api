@@ -19,7 +19,7 @@ type webServer struct {
 }
 
 func NewServer() *webServer {
-	s := &webServer{Server: http.Server{Addr: os.Getenv("PORT")}}
+	s := &webServer{Server: http.Server{Addr: ":" + os.Getenv("PORT")}}
 	router := Router()
 	loggedRouter := handlers.LoggingHandler(os.Stdout, router)
 	s.Server.Handler = loggedRouter
