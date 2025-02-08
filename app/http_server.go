@@ -1,9 +1,9 @@
 package app
 
 import (
+	c "go-chrome-extension-api/app/controllers"
 	"log"
 	"os"
-	c "stack-overflow-extension-backend/app/controllers"
 )
 
 func StartHTTPServer() {
@@ -18,5 +18,5 @@ func StartHTTPServer() {
 	}()
 
 	server.WaitShutdown()
-	log.Printf("HTTP server shuted down")
+	log.Printf("HTTP server shut down")
 }

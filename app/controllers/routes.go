@@ -2,11 +2,11 @@ package controllers
 
 import (
 	"context"
+	"go-chrome-extension-api/app/controllers/api/v1"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
-	"stack-overflow-extension-backend/app/controllers/api/v1"
 	"syscall"
 	"time"
 

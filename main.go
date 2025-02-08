@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/joho/godotenv"
+	"go-chrome-extension-api/app"
 	"log"
-	"stack-overflow-extension-backend/app"
 )
 
 func init() {
